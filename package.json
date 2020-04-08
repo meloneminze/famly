@@ -2,7 +2,7 @@
   "name": "famly",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "heroku-prebuild": "cd client && yarn",
     "client": "cd client && yarn start",
@@ -10,8 +10,8 @@
     "storybook": "cd client && yarn run storybook",
     "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\" \"yarn run storybook\"",
     "dev:server": "yarn run build && cd .. && yarn start",
-    "server": "nodemon index.js",
-    "start": "node index.js"
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
