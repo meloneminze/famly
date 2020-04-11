@@ -1,0 +1,54 @@
+{
+  "name": "famly",
+  "version": "1.0.0",
+  "scripts": {
+    "heroku-prebuild": "cd client && yarn",
+    "client": "cd client && yarn start",
+    "build": "cd client && yarn run build && yarn run build-storybook",
+    "storybook": "cd client && yarn run storybook",
+    "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\" \"yarn run storybook\"",
+    "dev:server": "yarn run build && cd .. && yarn start",
+    "server": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meloneminze/famly.git"
+  },
+  "private": true,
+  "author": "Melanie Turek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meloneminze/famly/issues"
+  },
+  "homepage": "https://github.com/meloneminze/famly#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
+  },
+  "cacheDirectories": [
+    "client/node_modules",
+    "node_modules"
+  ],
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5"
+  }
+}
