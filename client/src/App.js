@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from './GlobalStyles';
+import GlobalStyles from './components/GlobalStyles';
 import { ThemeProvider } from 'emotion-theming';
 import daylight from './themes/daylight';
 
