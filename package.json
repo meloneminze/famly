@@ -2,7 +2,7 @@
   "name": "famly",
   "version": "1.0.0",
   "scripts": {
-    "heroku-prebuild": "cd client && yarn add",
+    "heroku-prebuild": "cd client && yarn start",
     "client": "cd client && yarn start",
     "build": "cd client && yarn run build && yarn run build-storybook",
     "storybook": "cd client && yarn run storybook",
