@@ -9,11 +9,11 @@ export const loginButton = () => (
   <Button onClick={action('link to Login')}>Anmelden</Button>
 );
 export const signinButton = () => (
-  <Button onClick={action('link to Login')}>Registrieren</Button>
+  <Button onClick={action('link to SignIn')}>Registrieren</Button>
 );
 export const saveButton = () => (
-  <Button onClick={action('link to Login')}>Speichern</Button>
+  <Button onClick={action('link to Profile')}>Speichern</Button>
 );
 export const removeButton = () => (
-  <Button onClick={action('link to Login')}>Verwerfen</Button>
+  <Button onClick={action('link to Profile')}>Verwerfen</Button>
 );
