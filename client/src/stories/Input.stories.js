@@ -7,21 +7,33 @@ export default {
 };
 
 export const NameInput = () => (
-  <Input placeholder="Name" onChange={action('Change')}></Input>
+  <Input placeholder="Name" type="text" onChange={action('Change')}></Input>
 );
 
 export const EMailInput = () => (
-  <Input placeholder="E-Mail" onChange={action('Change')}></Input>
+  <Input placeholder="E-Mail" type="email" onChange={action('Change')}></Input>
 );
 
 export const PasswordInput = () => (
-  <Input placeholder="Passwort" onChange={action('Change')}></Input>
+  <Input
+    placeholder="Passwort"
+    type="password"
+    onChange={action('Change')}
+  ></Input>
 );
 
 export const RepeatPasswordInput = () => (
-  <Input placeholder="Passwort bestätigen" onChange={action('Change')}></Input>
+  <Input
+    placeholder="Passwort bestätigen"
+    type="password"
+    onChange={action('Change')}
+  ></Input>
 );
 
 export const ChangePasswordInput = () => (
-  <Input placeholder="Passwort ändern" onChange={action('Change')}></Input>
+  <Input
+    placeholder="Passwort ändern"
+    type="password"
+    onChange={action('Change')}
+  ></Input>
 );
