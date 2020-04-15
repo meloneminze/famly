@@ -6,11 +6,12 @@ const AddNewDataButton = styled.button`
   text-align: center;
   border: dashed;
   border-color: #ffbe68;
-  border-radius: 16px;
-  border-width: 2px;
-  box-shadow: 0px 3px 6px rgba(172, 109, 26, 56);
-  font-size: 30px;
-  font-family: 'Roboto Mono', monospace;
+  border-radius: 5rem;
+  border-width: 0.2rem;
+  box-shadow: 0rem 0.2rem 0.4rem rgba(172, 109, 26, 56);
+  cursor: pointer;
+  outline: none;
+  font: Roboto 1.5rem bold;
 `;
 
 export default AddNewDataButton;
