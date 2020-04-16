@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "heroku-prebuild": "cd client && yarn",
-    "client": "cd client && yarn start",
+    "client": "cd client && yarn run start",
     "build": "cd client && yarn run build && yarn run build-storybook",
     "storybook": "cd client && yarn run storybook",
     "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\" \"yarn run storybook\"",
@@ -50,6 +50,7 @@
     "dotenv": "^8.2.0",
     "emotion-theming": "^10.0.27",
     "express": "^4.17.1",
-    "mongodb": "^3.5.5"
+    "mongodb": "^3.5.5",
+    "react-router-dom": "^5.1.2"
   }
 }
