@@ -7,7 +7,7 @@ const Input = styled.input`
   border: none;
   text-align: left;
   box-shadow: 0rem 0.2rem 0.4rem rgba(172, 109, 26, 56);
-  font: Roboto Mono 1rem regular;
+
   outline: none;
   padding-left: 0.4rem;
   ::placeholder {
