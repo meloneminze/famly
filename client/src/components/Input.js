@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 const Input = styled.input`
-  background-color: #efeaea;
-  color: #4d4d4d;
+  background-color: ${(props) => props.theme.colors.input};
+  color: ${(props) => props.theme.colors.textPrimary};
   border-radius: 5rem;
   border: none;
   text-align: left;
@@ -11,7 +11,7 @@ const Input = styled.input`
   outline: none;
   padding-left: 0.4rem;
   ::placeholder {
-    color: #707070;
+    color: ${(props) => props.theme.colors.textSecondary};
   }
 `;
 export default Input;

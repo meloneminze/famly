@@ -4,6 +4,7 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import themeDecorator from './themeDecorator';
 import React from 'react';
 import styled from '@emotion/styled';
+
 const Main = styled.div`
   margin: 10px;
 `;
