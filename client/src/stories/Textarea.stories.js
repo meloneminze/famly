@@ -14,7 +14,7 @@ export const DataTextarea = () => {
         type="text"
         maxlength="50"
       ></Headline>
-      <Textarea placeholder="Nudeln" cols="50" rows="5"></Textarea>
+      <Textarea placeholder="Nudeln" cols="50" max-rows="5"></Textarea>
     </TextareaContainer>
   );
 };
