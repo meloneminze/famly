@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import daylight from './themes/daylight';
 import Children from './pages/Children';
 import Household from './pages/Household';
+import AppHeader from './components/AppHeader';
 
 const Main = styled.main`
   display: flex;
@@ -16,7 +17,7 @@ function App() {
     <ThemeProvider theme={daylight}>
       <Router>
         <GlobalStyles />
-        <div>famly</div>
+        <AppHeader />
         <Main>
           <Switch>
             <Route path="/household">
