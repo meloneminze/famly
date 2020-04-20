@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import { Textarea, TextareaContainer, Headline } from '../components/Textarea';
 
 export default {
@@ -12,7 +13,9 @@ export const DataTextarea = () => {
       <Headline
         placeholder="Lieblingsessen"
         type="text"
-        maxlength="65"
+        onChange={action('Change')}
+        minlength={1}
+        maxlength={65}
         size="65"
       ></Headline>
       <Textarea
