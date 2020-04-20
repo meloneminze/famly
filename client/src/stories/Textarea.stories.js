@@ -12,9 +12,15 @@ export const DataTextarea = () => {
       <Headline
         placeholder="Lieblingsessen"
         type="text"
-        maxlength="50"
+        maxlength="65"
+        size="65"
       ></Headline>
-      <Textarea placeholder="Nudeln" cols="50" max-rows="5"></Textarea>
+      <Textarea
+        placeholder="Nudeln"
+        cols="65"
+        min-rows="1"
+        max-rows="5"
+      ></Textarea>
     </TextareaContainer>
   );
 };
