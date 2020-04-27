@@ -1,33 +1,46 @@
 import React from 'react';
 import styled from '@emotion/styled';
+// import ActiveItem from '../assets/navbar_background.svg';
 // import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 
 const NavContainer = styled.ul`
-display: flex;
-// justify-content: center;
-// align-items: center;
-align-content: space-between;
-list-style: none;
-height: 10%;
-width= 100%;
-border-top: 0.2rem solid #4d4d4d;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  list-style: none;
+  height: 60px;
+  width: 100%;
+  border-top: 0.2rem solid #4d4d4d;
 `;
 
 const NavItem = styled.li`
-  display: flex;
-  flex: 1;
-  align-content: space-between;
-  justify-content: center;
-  align-items: center;
-  max-width: 50%;
-  cursor: pointer;
+  flex-grow: 1;
+  background: ${(props) => (props.active ? 'orange' : 'none')};
 `;
 
+const NavLink = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
+
+// clip-path: polygon(0 0, 51% 0, 100% 100%, 0% 100%);
+
 const NavBottom = () => {
+  const location = useLocation();
+
   return (
     <NavContainer>
-      <NavItem>Kind</NavItem>
-      <NavItem>Home</NavItem>
+      <NavItem active={location.pathname === '/'}>
+        <NavLink to="/">Kind</NavLink>
+      </NavItem>
+
+      <NavItem active={location.pathname === '/household'}>
+        <NavLink to="/household">Home</NavLink>
+      </NavItem>
     </NavContainer>
   );
 };
