@@ -2,13 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const TextareaContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  flex-flow: row;
   flex-wrap: wrap;
   background-color: ${(props) => props.theme.colors.input};
   border-radius: 1.25rem;
   border: none;
-  padding: 0.6rem;
+  padding: 1rem;
   outline: none;
 `;
 
@@ -18,7 +17,7 @@ color: ${(props) => props.theme.colors.textSecondary}
 font-weight: bold;
 outline: none;
 cursor: pointer;
-max-width: 100%;
+width: 100%;
 border: none;
 border-bottom: dotted #707070;
 ::placeholder {
@@ -31,7 +30,7 @@ background-color: ${(props) => props.theme.colors.input};
   border: none;
   outline: none;
   cursor: pointer;
-  max-width: 100%;
+  width: 100%;
   resize: none;
   wrap: "off";
   ::placeholder {
@@ -45,13 +44,13 @@ const SimpleDataField = () => {
         placeholder="Adresse der Schule"
         minLength={1}
         maxLength={50}
-        size="65"
+        // size="65"
       ></Headline>
       <Textarea
         placeholder="Aquariumstraße 42"
-        maxLength={250}
+        maxLength={200}
         rows={3}
-        cols={60}
+        // cols={60}
       ></Textarea>
     </TextareaContainer>
   );
