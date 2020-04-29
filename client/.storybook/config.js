@@ -4,6 +4,7 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import themeDecorator from './themeDecorator';
 import React from 'react';
 import styled from '@emotion/styled';
+import StoryRouter from 'storybook-react-router';
 
 const Main = styled.div`
   margin: 10px;
@@ -15,8 +16,10 @@ const GlobalStylesDecorator = (storyFn) => (
     {storyFn()}
   </Main>
 );
+
 addDecorator(GlobalStylesDecorator);
 addDecorator(themeDecorator);
+addDecorator(StoryRouter());
 addParameters({
   viewport: { viewports: INITIAL_VIEWPORTS, defaultViewport: 'iphone6' },
 });
