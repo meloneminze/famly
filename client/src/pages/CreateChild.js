@@ -50,8 +50,6 @@ const CreateChild = () => {
 
         <Information>
           <MemberInfoInput />
-          <MemberInfoInput />#
-          <MemberInfoInput />
           <AddNewDataButton>+ Daten</AddNewDataButton>
         </Information>
         <ButtonArea>
