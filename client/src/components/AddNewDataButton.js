@@ -8,10 +8,13 @@ const AddNewDataButton = styled.button`
   border-color: ${(props) => props.theme.colors.light};
   border-radius: 5rem;
   border-width: 0.2rem;
+  width: 100%;
+  height: 40px;
+  margin: 0.3rem;
   box-shadow: 0rem 0.2rem 0.4rem rgba(172, 109, 26, 56);
   cursor: pointer;
   outline: none;
-  font: Roboto 1.5rem bold;
+  font-size: x-large;
 `;
 
 export default AddNewDataButton;
