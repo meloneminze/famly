@@ -37,7 +37,7 @@ background-color: ${(props) => props.theme.colors.input};
     color: ${(props) => props.theme.colors.textSecondary};
 `;
 
-const SimpleDataField = () => {
+const MemberInfoInput = () => {
   return (
     <TextareaContainer>
       <Headline
@@ -56,4 +56,4 @@ const SimpleDataField = () => {
   );
 };
 
-export default SimpleDataField;
+export default MemberInfoInput;

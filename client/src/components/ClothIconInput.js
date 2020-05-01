@@ -6,11 +6,12 @@ export const ClothIconInput = styled(Input)`
   placeholder: none;
   background-image: url(${clothIcon});
   background-repeat: no-repeat;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-position: 10%;
   background-size: 3rem;
-  margin-left: 1rem;
-  padding: 2rem;
+  margin: 0.3rem;
+  padding: 1.5rem;
+  max-width: 40%;
   vertical-align: middle;
   text-align: right;
 `;
