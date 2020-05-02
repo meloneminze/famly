@@ -9,7 +9,7 @@ export const BirthdayIconInput = styled(Input)`
   font-size: 1rem;
   background-position: 10%;
   background-size: 3rem;
-  max-width: 40%;
+  width: 10rem;
   margin: 0.3rem;
   padding: 1.5rem;
   vertical-align: middle;

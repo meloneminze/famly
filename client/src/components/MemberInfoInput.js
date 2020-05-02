@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const TextareaContainer = styled.div`
-  flex-flow: row;
-  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
   background-color: ${(props) => props.theme.colors.input};
   border-radius: 1.25rem;
   border: none;
@@ -17,7 +17,6 @@ color: ${(props) => props.theme.colors.textSecondary}
 font-weight: bold;
 outline: none;
 cursor: pointer;
-width: 100%;
 border: none;
 border-bottom: dotted #707070;
 ::placeholder {
@@ -30,9 +29,7 @@ background-color: ${(props) => props.theme.colors.input};
   border: none;
   outline: none;
   cursor: pointer;
-  width: 100%;
   resize: none;
-  wrap: "off";
   ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
 `;
@@ -44,13 +41,13 @@ const MemberInfoInput = () => {
         placeholder="Adresse der Schule"
         minLength={1}
         maxLength={50}
-        // size="65"
+        size="45"
       ></Headline>
       <Textarea
         placeholder="Aquariumstraße 42"
         maxLength={200}
         rows={3}
-        // cols={60}
+        cols={45}
       ></Textarea>
     </TextareaContainer>
   );

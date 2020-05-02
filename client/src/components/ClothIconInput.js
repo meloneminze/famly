@@ -11,7 +11,7 @@ export const ClothIconInput = styled(Input)`
   background-size: 3rem;
   margin: 0.3rem;
   padding: 1.5rem;
-  max-width: 40%;
+  width: 10rem;
   vertical-align: middle;
   text-align: right;
 `;

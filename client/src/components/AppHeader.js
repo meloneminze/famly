@@ -13,6 +13,8 @@ const HeaderTitle = styled.h1`
   color: ${(props) => props.theme.colors.textPrimary};
   text-align: center;
   padding: 0.3rem;
+  cursor: pointer;
+  outline: none;
 `;
 
 function AppHeader() {

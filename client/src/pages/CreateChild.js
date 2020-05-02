@@ -10,30 +10,48 @@ import Button from '../components/Button';
 import AddNewDataButton from '../components/AddNewDataButton';
 
 const Main = styled.div`
-  flex-flow: row;
-  overflow-: hidden;
-  width: 100%;
-  margin: 0 0.6rem;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0rem 0.6rem;
+  justify-content: center;
+  align-item: center;
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0.6rem 0;
+  justify-content: space-between;
 `;
 
 const IconInput = styled.div`
-  flex-flow: column;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-item: center;
+  align-content: center;
 `;
 
 const Information = styled.div`
-  flex-flow: column;
-  flex-wrap: wrap;
-  margin: 0.6rem;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0.6rem 0;
 `;
 
 const ButtonArea = styled.div`
   display: flex;
   flex-direction: row;
-  height: 30px;
-  margin: 0.6rem;
-  justify-content: space-between;
+  height: 2.2rem;
+  justify-content: space-evenly;
+  margin: 0.6rem 0;
+`;
+
+const Link = styled.a`
+  display: flex;
+  justify-content: flex-end;
+  color: ${(props) => props.theme.colors.textThird};
+  cursor: pointer;
+  margin: 0.6rem 0;
 `;
 
 const CreateChild = () => {
@@ -41,13 +59,14 @@ const CreateChild = () => {
     <>
       <AppHeader />
       <Main>
-        <Polaroid />
-        <IconInput>
-          <BirthdayIconInput />
-          <ClothIconInput />
-          <ShoeIconInput />
-        </IconInput>
-
+        <Container>
+          <Polaroid />
+          <IconInput>
+            <BirthdayIconInput minLength={1} maxLength={10} />
+            <ClothIconInput minLength={1} maxLength={6} />
+            <ShoeIconInput minLength={1} maxLength={6} />
+          </IconInput>
+        </Container>
         <Information>
           <MemberInfoInput />
           <AddNewDataButton>+ Daten</AddNewDataButton>
@@ -56,6 +75,7 @@ const CreateChild = () => {
           <Button>Speichern</Button>
           <Button>Verwerfen</Button>
         </ButtonArea>
+        <Link>Kind löschen</Link>
       </Main>
     </>
   );

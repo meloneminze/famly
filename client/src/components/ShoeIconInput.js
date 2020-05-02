@@ -9,10 +9,10 @@ const ShoeIconInput = styled(Input)`
   font-size: 1rem;
   background-position: 10%;
   background-size: 3rem;
-  margin: 0.3rem;
-  max-width: 40%;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+  width: 10rem;
   padding: 1.5rem;
-  vertical-align: middle;
   text-align: right;
 `;
 
