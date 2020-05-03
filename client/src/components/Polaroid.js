@@ -4,21 +4,23 @@ import defaultPic from '../assets/user-regular.svg';
 
 const Frame = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 0.2rem;
+  flex-flow: column wrap;
   background-color: #ffffff;
-  justify-content: center;
+  margin-right: 5px;
   cursor: pointer;
+  width: 168px;
   outline: none;
   border: none;
-  box-shadow: 0rem 0.2rem 0.4rem;
+  box-shadow: 0px 3px 6px;
 `;
 
 const PictureWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  border: none;
+  outline: none;
+  margin: 10px;
+  height: 190px;
 `;
 
 const Picture = styled.img`
@@ -26,27 +28,24 @@ const Picture = styled.img`
   background-color: ${(props) => props.theme.colors.light};
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 10rem;
-  text-align: center;
-  max-width: 100%;
-  height: 300px;
-  margin: 1rem;
-  flex-grow: 1;
+  background-size: 80px;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
+  border: none;
   outline: none;
 `;
 
 const Label = styled.input`
-margin: 1rem;
-max-width: 100%;
+margin-top: 13px;
+width: 150px;
 color: ${(props) => props.theme.colors.textPrimary};
 cursor: pointer;
 outline: none;
 text-align: center;
 border: none;
 border-bottom: dashed #707070;
-flex-grow: 1;
-font-size: 1.5rem;
+font-size: 1rem;
 ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
 `;
@@ -56,7 +55,7 @@ function Polaroid() {
     <Frame>
       <PictureWrapper>
         <Picture />
-        <Label placeholder="Name" />
+        <Label placeholder="Name" minLength="1" maxLength="20" />
       </PictureWrapper>
     </Frame>
   );

@@ -2,13 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const TextareaContainer = styled.div`
-  flex-flow: row;
-  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
   background-color: ${(props) => props.theme.colors.input};
-  border-radius: 1.25rem;
+  border-radius: 20px;
   border: none;
-  padding: 1rem;
+  padding: 16px;
   outline: none;
+  box-shadow: 0px 3px 6px;
 `;
 
 const Headline = styled.input`
@@ -17,8 +18,8 @@ color: ${(props) => props.theme.colors.textSecondary}
 font-weight: bold;
 outline: none;
 cursor: pointer;
-width: 100%;
 border: none;
+width: 100%;
 border-bottom: dotted #707070;
 ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
@@ -30,30 +31,27 @@ background-color: ${(props) => props.theme.colors.input};
   border: none;
   outline: none;
   cursor: pointer;
-  width: 100%;
   resize: none;
-  wrap: "off";
   ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
 `;
 
-const SimpleDataField = () => {
+const MemberInfoInput = () => {
   return (
     <TextareaContainer>
       <Headline
         placeholder="Adresse der Schule"
-        minLength={1}
-        maxLength={50}
-        // size="65"
+        minLength="1"
+        maxLength="50"
       ></Headline>
       <Textarea
         placeholder="Aquariumstraße 42"
-        maxLength={200}
-        rows={3}
-        // cols={60}
+        maxLength="200"
+        rows="3"
+        cols="45"
       ></Textarea>
     </TextareaContainer>
   );
 };
 
-export default SimpleDataField;
+export default MemberInfoInput;

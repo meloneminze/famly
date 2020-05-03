@@ -6,12 +6,12 @@ const Button = styled.button`
   text-align: center;
   border: solid;
   border-color: ${(props) => props.theme.colors.light};
-  border-radius: 1rem;
-  border-width: 0.2rem;
-  box-shadow: 0rem 0.2rem 0.4rem rgba(172, 109, 26, 56);
+  border-radius: 16px;
+  border-width: 3px;
+  box-shadow: 0px 3px 6px rgba(172, 109, 26, 56);
   cursor: pointer;
   outline: none;
-  font: Roboto 1rem regular;
+  font: bold 1.5rem 'Roboto', sans-serif;
 `;
 
 export default Button;

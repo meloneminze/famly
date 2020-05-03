@@ -13,3 +13,8 @@ export const NewAdultButton = () => (
     +Elternteil
   </AddNewDataButton>
 );
+export const NewInformationButton = () => (
+  <AddNewDataButton onClick={action('link to Element')}>
+    +Daten
+  </AddNewDataButton>
+);
