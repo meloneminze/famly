@@ -8,10 +8,10 @@ export const ClothIconInput = styled(Input)`
   background-repeat: no-repeat;
   font-size: 1rem;
   background-position: 10%;
-  background-size: 3rem;
-  margin: 0.3rem;
-  padding: 1.5rem;
-  width: 10rem;
+  background-size: 48px;
+  margin: 5px;
+  padding: 24px;
+  width: 97%;
   vertical-align: middle;
   text-align: right;
 `;

@@ -6,12 +6,12 @@ const Frame = styled.div`
   display: flex;
   flex-flow: column wrap;
   background-color: #ffffff;
-  margin-right: 0.3rem;
+  margin-right: 5px;
   cursor: pointer;
-  width: 10.5rem;
+  width: 168px;
   outline: none;
   border: none;
-  box-shadow: 0rem 0.2rem 0.4rem;
+  box-shadow: 0px 3px 6px;
 `;
 
 const PictureWrapper = styled.div`
@@ -19,8 +19,8 @@ const PictureWrapper = styled.div`
   flex-flow: column wrap;
   border: none;
   outline: none;
-  margin: 0.6rem;
-  height: 12rem;
+  margin: 10px;
+  height: 190px;
 `;
 
 const Picture = styled.img`
@@ -28,17 +28,17 @@ const Picture = styled.img`
   background-color: ${(props) => props.theme.colors.light};
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 5rem;
-  width: 9.5rem;
-  height: 9.5rem;
+  background-size: 80px;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
   border: none;
   outline: none;
 `;
 
 const Label = styled.input`
-margin-top: 0.8rem;
-width: 9.5rem;
+margin-top: 13px;
+width: 150px;
 color: ${(props) => props.theme.colors.textPrimary};
 cursor: pointer;
 outline: none;
@@ -55,7 +55,7 @@ function Polaroid() {
     <Frame>
       <PictureWrapper>
         <Picture />
-        <Label placeholder="Name" minLength={1} maxLength={20} />
+        <Label placeholder="Name" minLength="1" maxLength="20" />
       </PictureWrapper>
     </Frame>
   );

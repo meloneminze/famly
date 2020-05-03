@@ -7,11 +7,11 @@ export const BirthdayIconInput = styled(Input)`
   background-image: url(${birthdayIcon});
   background-repeat: no-repeat;
   font-size: 1rem;
-  background-position: 10%;
-  background-size: 3rem;
-  width: 10rem;
-  margin: 0.3rem;
-  padding: 1.5rem;
+  background-position: 15%;
+  background-size: 44px;
+  width: 97%;
+  margin: 5px;
+  padding: 24px;
   vertical-align: middle;
   text-align: right;
 `;

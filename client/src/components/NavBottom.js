@@ -10,7 +10,7 @@ const NavContainer = styled.ul`
   padding: 0;
   height: 60px;
   width: 100%;
-  border-top: 0.2rem solid #4d4d4d;
+  border-top: 3px solid #4d4d4d;
 `;
 
 const NavItemLeft = styled.li`

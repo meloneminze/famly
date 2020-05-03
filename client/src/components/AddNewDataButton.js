@@ -6,14 +6,14 @@ const AddNewDataButton = styled.button`
   text-align: center;
   border: dashed;
   border-color: ${(props) => props.theme.colors.light};
-  border-radius: 5rem;
-  border-width: 0.2rem;
-  height: 3rem;
-  margin: 0.6rem 0;
-  box-shadow: 0rem 0.2rem 0.4rem rgba(172, 109, 26, 56);
+  border-radius: 80px;
+  border-width: 3px;
+  height: 48px;
+  margin: 10px 0;
+  box-shadow: 0 3px 6px rgba(172, 109, 26, 56);
   cursor: pointer;
   outline: none;
-  font-size: x-large;
+  font: bold 1.5rem 'Roboto', sans-serif;
 `;
 
 export default AddNewDataButton;

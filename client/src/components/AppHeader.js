@@ -2,17 +2,17 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Header = styled.header`
-  width: 100%;
-  background-color: ${(props) => props.theme.colors.BackgroundPrimary};
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  background-color: ${(props) => props.theme.colors.BackgroundPrimary};
 `;
 
 const HeaderTitle = styled.h1`
   color: ${(props) => props.theme.colors.textPrimary};
   text-align: center;
-  padding: 0.3rem;
+  padding: 5px;
   cursor: pointer;
   outline: none;
 `;
