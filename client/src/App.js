@@ -9,8 +9,9 @@ import GlobalStyles from './components/GlobalStyles';
 import { ThemeProvider } from 'emotion-theming';
 import daylight from './themes/daylight';
 import Children from './pages/Children';
-import Household from './pages/DisplayHousehold';
+import DisplayHousehold from './pages/DisplayHousehold';
 import CreateChild from './pages/CreateChild';
+import DisplayChild from './pages/DisplayChild';
 
 function App() {
   return (
@@ -34,10 +35,10 @@ function App() {
             <CreateChild />
           </Route>
           <Route exact path="/children/:id">
-            <div>Child</div>
+            <DisplayChild />
           </Route>
           <Route path="/household">
-            <Household />
+            <DisplayHousehold />
           </Route>
         </Switch>
       </Router>
