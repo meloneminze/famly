@@ -52,7 +52,7 @@ const NavBottom = () => {
 
   return (
     <NavContainer>
-      <NavItemLeft active={location.pathname === '/'}>
+      <NavItemLeft active={location.pathname === '/children'}>
         <NavLink to="/">
           <SVG
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,9 @@ const NavBottom = () => {
           </SVG>
         </NavLink>
       </NavItemLeft>
-      <NavItemRight active={location.pathname === '/household'}>
+      <NavItemRight
+        active={location.pathname === '/household' || '/displayHousehold'}
+      >
         <NavLink to="/household">
           <SVG
             xmlns="http://www.w3.org/2000/svg"
