@@ -9,8 +9,7 @@ import GlobalStyles from './components/GlobalStyles';
 import { ThemeProvider } from 'emotion-theming';
 import daylight from './themes/daylight';
 import Children from './pages/Children';
-import Household from './pages/Household';
-
+import Household from './pages/DisplayHousehold';
 import CreateChild from './pages/CreateChild';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
     <ThemeProvider theme={daylight}>
       <Router>
         <GlobalStyles />
-
         <Switch>
           <Route exact path="/">
             <Redirect to="/children" />
