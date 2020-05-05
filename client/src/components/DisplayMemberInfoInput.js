@@ -14,7 +14,7 @@ const TextareaContainer = styled.div`
 
 const Headline = styled.input`
 background-color: ${(props) => props.theme.colors.input};
-color: ${(props) => props.theme.colors.textSecondary}
+color: ${(props) => props.theme.colors.textSecondary};
 font-weight: bold;
 outline: none;
 cursor: pointer;
@@ -39,17 +39,13 @@ background-color: ${(props) => props.theme.colors.input};
 const MemberInfoInput = () => {
   return (
     <TextareaContainer>
-      <Headline
-        placeholder="Adresse der Schule"
-        minLength="1"
-        maxLength="50"
-      ></Headline>
+      <Headline placeholder="Adresse der Schule" minLength="1" maxLength="50" />
       <Textarea
         placeholder="Aquariumstraße 42"
         maxLength="200"
         rows="3"
         cols="45"
-      ></Textarea>
+      />
     </TextareaContainer>
   );
 };
