@@ -2,7 +2,7 @@ import React from 'react';
 import CreateChild from '../pages/CreateChild';
 
 export default {
-  title: 'Child',
+  title: 'Pages',
 };
 
-export const ChildCard = () => <CreateChild />;
+export const CreateChildPage = () => <CreateChild />;

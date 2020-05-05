@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import AppHeader from '../components/AppHeader';
-import Polaroid from '../components/Polaroid';
+import CreatePolaroid from '../components/CreatePolaroid';
 import BirthdayIconInput from '../components/BirthdayIconInput';
 import ClothIconInput from '../components/ClothIconInput';
 import ShoeIconInput from '../components/ShoeIconInput';
-import MemberInfoInput from '../components/MemberInfoInput';
+import CreateMemberInfoInput from '../components/CreateMemberInfoInput';
 import Button from '../components/Button';
 import AddNewDataButton from '../components/AddNewDataButton';
 
@@ -60,7 +60,7 @@ const CreateChild = () => {
       <AppHeader />
       <Main>
         <Container>
-          <Polaroid />
+          <CreatePolaroid />
           <IconInput>
             <BirthdayIconInput minLength={1} maxLength={10} />
             <ClothIconInput minLength={1} maxLength={6} />
@@ -68,7 +68,7 @@ const CreateChild = () => {
           </IconInput>
         </Container>
         <Information>
-          <MemberInfoInput />
+          <CreateMemberInfoInput />
           <AddNewDataButton>+ Daten</AddNewDataButton>
         </Information>
         <ButtonArea>
