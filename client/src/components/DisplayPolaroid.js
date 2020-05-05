@@ -44,13 +44,12 @@ cursor: pointer;
 outline: none;
 text-align: center;
 border: none;
-border-bottom: dashed #707070;
 font-size: 1rem;
 ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
 `;
 
-function Polaroid() {
+function DisplayPolaroid() {
   return (
     <Frame>
       <PictureWrapper>
@@ -61,4 +60,4 @@ function Polaroid() {
   );
 }
 
-export default Polaroid;
+export default DisplayPolaroid;

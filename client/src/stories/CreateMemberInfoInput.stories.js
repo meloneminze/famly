@@ -1,10 +1,10 @@
 import React from 'react';
-import MemberInfoInput from '../components/MemberInfoInput';
+import CreateMemberInfoInput from '../components/CreateMemberInfoInput';
 
 export default {
   title: 'MemberInfoInput',
 };
 
 export const DataField = () => {
-  return <MemberInfoInput />;
+  return <CreateMemberInfoInput />;
 };

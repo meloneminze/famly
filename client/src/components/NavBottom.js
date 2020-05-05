@@ -11,6 +11,8 @@ const NavContainer = styled.ul`
   height: 60px;
   width: 100%;
   border-top: 3px solid #4d4d4d;
+  position: fixed;
+  bottom: 0;
 `;
 
 const NavItemLeft = styled.li`

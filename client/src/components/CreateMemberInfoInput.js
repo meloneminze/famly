@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const TextareaContainer = styled.div`
+const CreateTextareaContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   background-color: ${(props) => props.theme.colors.input};
@@ -12,9 +12,9 @@ const TextareaContainer = styled.div`
   box-shadow: 0px 3px 6px;
 `;
 
-const Headline = styled.input`
+const CreateHeadline = styled.input`
 background-color: ${(props) => props.theme.colors.input};
-color: ${(props) => props.theme.colors.textSecondary}
+color: ${(props) => props.theme.colors.textSecondary};
 font-weight: bold;
 outline: none;
 cursor: pointer;
@@ -23,9 +23,10 @@ width: 100%;
 border-bottom: dotted #707070;
 ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
+    font-weight: bold;
 `;
 
-const Textarea = styled.textarea`
+const CreateTextarea = styled.textarea`
 background-color: ${(props) => props.theme.colors.input};
   color: ${(props) => props.theme.colors.textPrimary};
   border: none;
@@ -36,22 +37,22 @@ background-color: ${(props) => props.theme.colors.input};
     color: ${(props) => props.theme.colors.textSecondary};
 `;
 
-const MemberInfoInput = () => {
+const CreateMemberInfoInput = () => {
   return (
-    <TextareaContainer>
-      <Headline
+    <CreateTextareaContainer>
+      <CreateHeadline
         placeholder="Adresse der Schule"
         minLength="1"
         maxLength="50"
-      ></Headline>
-      <Textarea
+      />
+      <CreateTextarea
         placeholder="Aquariumstraße 42"
         maxLength="200"
         rows="3"
         cols="45"
-      ></Textarea>
-    </TextareaContainer>
+      />
+    </CreateTextareaContainer>
   );
 };
 
-export default MemberInfoInput;
+export default CreateMemberInfoInput;

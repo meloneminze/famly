@@ -1,13 +1,22 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import AppHeader from '../components/AppHeader';
-import CreatePolaroid from '../components/CreatePolaroid';
+import BackIconButton from '../components/BackIconButton';
+import DisplayPolaroid from '../components/DisplayPolaroid';
 import BirthdayIconInput from '../components/BirthdayIconInput';
 import ClothIconInput from '../components/ClothIconInput';
 import ShoeIconInput from '../components/ShoeIconInput';
-import CreateMemberInfoInput from '../components/CreateMemberInfoInput';
-import Button from '../components/Button';
-import AddNewDataButton from '../components/AddNewDataButton';
+import DisplayMemberInfoInput from '../components/DisplayMemberInfoInput';
+import NavBottom from '../components/NavBottom';
+import EditIconButton from '../components/EditIconButton';
+
+const IconHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 const Main = styled.div`
   display: flex;
@@ -38,29 +47,16 @@ const Information = styled.div`
   margin: 10px 0;
 `;
 
-const ButtonArea = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 35px;
-  justify-content: space-evenly;
-  margin: 10px 0;
-`;
-
-const Link = styled.a`
-  display: flex;
-  justify-content: flex-end;
-  color: ${(props) => props.theme.colors.textThird};
-  cursor: pointer;
-  margin: 10px 0;
-`;
-
-const CreateChild = () => {
+const DisplayChild = () => {
   return (
     <>
-      <AppHeader />
+      <IconHeader>
+        <BackIconButton />
+        <EditIconButton />
+      </IconHeader>
       <Main>
         <Container>
-          <CreatePolaroid />
+          <DisplayPolaroid />
           <IconInput>
             <BirthdayIconInput minLength={1} maxLength={10} />
             <ClothIconInput minLength={1} maxLength={6} />
@@ -68,17 +64,12 @@ const CreateChild = () => {
           </IconInput>
         </Container>
         <Information>
-          <CreateMemberInfoInput />
-          <AddNewDataButton>+ Daten</AddNewDataButton>
+          <DisplayMemberInfoInput />
         </Information>
-        <ButtonArea>
-          <Button>Speichern</Button>
-          <Button>Verwerfen</Button>
-        </ButtonArea>
-        <Link>Kind löschen</Link>
       </Main>
+      <NavBottom />
     </>
   );
 };
 
-export default CreateChild;
+export default DisplayChild;
