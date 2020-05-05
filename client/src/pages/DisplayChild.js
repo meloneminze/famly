@@ -6,8 +6,8 @@ import BirthdayIconInput from '../components/BirthdayIconInput';
 import ClothIconInput from '../components/ClothIconInput';
 import ShoeIconInput from '../components/ShoeIconInput';
 import DisplayMemberInfoInput from '../components/DisplayMemberInfoInput';
-import NavBottom from '../components/NavBottom';
 import EditIconButton from '../components/EditIconButton';
+import FullContainer from '../components/FullContainer';
 
 const IconHeader = styled.div`
   display: flex;
@@ -50,24 +50,25 @@ const Information = styled.div`
 const DisplayChild = () => {
   return (
     <>
-      <IconHeader>
-        <BackIconButton />
-        <EditIconButton />
-      </IconHeader>
-      <Main>
-        <Container>
-          <DisplayPolaroid />
-          <IconInput>
-            <BirthdayIconInput minLength={1} maxLength={10} />
-            <ClothIconInput minLength={1} maxLength={6} />
-            <ShoeIconInput minLength={1} maxLength={6} />
-          </IconInput>
-        </Container>
-        <Information>
-          <DisplayMemberInfoInput />
-        </Information>
-      </Main>
-      <NavBottom />
+      <FullContainer>
+        <IconHeader>
+          <BackIconButton />
+          <EditIconButton />
+        </IconHeader>
+        <Main>
+          <Container>
+            <DisplayPolaroid />
+            <IconInput>
+              <BirthdayIconInput minLength={1} maxLength={10} />
+              <ClothIconInput minLength={1} maxLength={6} />
+              <ShoeIconInput minLength={1} maxLength={6} />
+            </IconInput>
+          </Container>
+          <Information>
+            <DisplayMemberInfoInput />
+          </Information>
+        </Main>
+      </FullContainer>
     </>
   );
 };
