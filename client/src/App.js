@@ -12,6 +12,8 @@ import Children from './pages/Children';
 import DisplayHousehold from './pages/DisplayHousehold';
 import CreateChild from './pages/CreateChild';
 import DisplayChild from './pages/DisplayChild';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 function App() {
   return (
@@ -23,10 +25,10 @@ function App() {
             <Redirect to="/children" />
           </Route>
           <Route exact path="/login">
-            <div>Login</div>
+            <Login />
           </Route>
           <Route exact path="/register">
-            <div>Register</div>
+            <Register />
           </Route>
           <Route exact path="/children">
             <Children />
