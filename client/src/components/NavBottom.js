@@ -9,10 +9,15 @@ const NavContainer = styled.ul`
   margin: 0;
   padding: 0;
   height: 60px;
-  width: 100%;
   border-top: 3px solid #4d4d4d;
   position: fixed;
   bottom: 0;
+  @media only screen and (min-device-width: 480px) {
+    width: 375px;
+  }
+  @media only screen and (min-device-width: 768px) {
+    max-width: 375px;
+  }
 `;
 
 const NavItemLeft = styled.li`
