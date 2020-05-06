@@ -66,7 +66,10 @@ const NavBottom = () => {
         </NavLink>
       </NavItemLeft>
       <NavItemRight
-        active={location.pathname === '/household' || '/displayHousehold'}
+        active={
+          location.pathname === '/household' ||
+          location.pathname === '/displayHousehold'
+        }
       >
         <NavLink to="/household">
           <SVG
