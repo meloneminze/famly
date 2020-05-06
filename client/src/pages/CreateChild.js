@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import FullContainer from '../components/FullContainer';
 import AppHeader from '../components/AppHeader';
 import CreatePolaroid from '../components/CreatePolaroid';
 import BirthdayIconInput from '../components/BirthdayIconInput';
@@ -57,26 +58,28 @@ const Link = styled.a`
 const CreateChild = () => {
   return (
     <>
-      <AppHeader />
-      <Main>
-        <Container>
-          <CreatePolaroid />
-          <IconInput>
-            <BirthdayIconInput minLength={1} maxLength={10} />
-            <ClothIconInput minLength={1} maxLength={6} />
-            <ShoeIconInput minLength={1} maxLength={6} />
-          </IconInput>
-        </Container>
-        <Information>
-          <CreateMemberInfoInput />
-          <AddNewDataButton>+ Daten</AddNewDataButton>
-        </Information>
-        <ButtonArea>
-          <Button>Speichern</Button>
-          <Button>Verwerfen</Button>
-        </ButtonArea>
-        <Link>Kind löschen</Link>
-      </Main>
+      <FullContainer>
+        <AppHeader />
+        <Main>
+          <Container>
+            <CreatePolaroid />
+            <IconInput>
+              <BirthdayIconInput minLength={1} maxLength={10} />
+              <ClothIconInput minLength={1} maxLength={6} />
+              <ShoeIconInput minLength={1} maxLength={6} />
+            </IconInput>
+          </Container>
+          <Information>
+            <CreateMemberInfoInput />
+            <AddNewDataButton>+ Daten</AddNewDataButton>
+          </Information>
+          <ButtonArea>
+            <Button>Speichern</Button>
+            <Button>Verwerfen</Button>
+          </ButtonArea>
+          <Link>Kind löschen</Link>
+        </Main>
+      </FullContainer>
     </>
   );
 };

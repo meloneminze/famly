@@ -7,9 +7,11 @@ const Input = styled.input`
   border: none;
   text-align: left;
   box-shadow: 0px 3px 6px;
-
+  margin: 10px 0;
+  height: 40px;
   outline: none;
-  padding-left: 6px;
+  padding-left: 20px;
+  font-size: 1rem;
   ::placeholder {
     color: ${(props) => props.theme.colors.textSecondary};
   }
